@@ -75,6 +75,9 @@ export default class BlurMask extends cc.Component {
 		this.sprite.spriteFrame = this.spriteFrame;
 		this.material["_props"]["bightness"] = this.bightness;
 		this.material["_props"]["blurAmount"] = this.blurAmount;
+		this.material["_props"]["width"] = this.node.width;
+		this.material["_props"]["height"] = this.node.height;
+		
 		this.sprite["_materials"][0] = this.material;
 	}
 
